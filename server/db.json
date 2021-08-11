@@ -2,75 +2,59 @@
     "users": [
       {
         "id": 1,
-        "username": "duncan",
-        "country": "australia",
-        "password": "123"
+        "username": "Duncan",
+        "country": "Australia",
+        "sex": "Boy",
+        "age": 18
       },
       {
         "id": 2,
-        "username": "sarah",
-        "country": "england",
-        "password": "123"
+        "username": "Sarah",
+        "country": "England",
+        "sex": "Girl",
+        "age": 23
       },
       {
         "id": 3,
-        "username": "admin",
-        "country": "usa",
-        "password": "123"
+        "username": "Admin",
+        "country": "America",
+        "sex": "Man",
+        "age": 34
       },
       {
-        "username": "test2",
-        "password": "123",
-        "id": 4
-      }
-    ],
-    "profiles": [
-      {
-        "id": 1,
-        "userId": 1,
-        "job": "Plumber"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "job": "developer"
-      },
-      {
-        "id": 3,
-        "userId": 3,
-        "job": "Manager"
-      }
-    ],
-    "products": [
-      {
-        "id": 1,
-        "name": "Spanner",
-        "category": "tools"
-      },
-      {
-        "id": 2,
-        "name": "Hammer",
-        "category": "tools"
-      },
-      {
-        "id": 3,
-        "name": "Screw driver",
-        "category": "tools"
-      },
-      {
+        "username": "Jane",
+        "sex": "Woman",
         "id": 4,
-        "name": "Paint brush",
-        "category": "paint"
+        "country": "China",
+        "age": 33
       },
       {
+        "username": "Sam",
+        "sex": "Man",
         "id": 5,
-        "name": "Paint roller",
-        "category": "paint"
+        "country": "USA",
+        "age": 38
       },
       {
+        "username": "小明",
+        "sex": "Boy",
         "id": 6,
-        "name": "Paint",
-        "category": "paint"
+        "country": "China",
+        "age": 17
+      },
+      {
+        "username": "Jaraslaw",
+        "sex": "Man",
+        "id": 7,
+        "country": "Poland",
+        "age": 31
+      },
+      {
+        "username": "Yuki",
+        "sex": "Woman",
+        "id": 8,
+        "country": "Japan",
+        "age": 33
       }
     ]
   }

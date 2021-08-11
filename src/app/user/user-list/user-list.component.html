@@ -1,0 +1,31 @@
+<p>Users that you can see!!!</p>
+<div class="form-group card-body">
+    <label for="usr">Filter:</label>
+    <input type="text" class="form-control" id="usr" [(ngModel)]="name">
+</div>
+<div class="card-body" *ngIf="filteredUsers$ | async as users">
+    <div *ngIf="users.length === 0">No Results</div>
+    <table *ngIf="users.length > 0" class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Sex</th>
+        <th scope="col">Country</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+        <th scope="row">{{ user.id }}</th>
+        <td>
+        {{ user.username }}
+        </td>
+        <td>{{ user.sex}}</td>
+        <td>{{ user.country}}</td>
+        <td><a class="nav-link"
+            routerLink='/deail'>Detail</a></td>
+    </tr>
+    </tbody>
+    </table>
+</div>
