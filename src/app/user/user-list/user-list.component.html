@@ -24,7 +24,7 @@
         <td>{{ user.sex}}</td>
         <td>{{ user.country}}</td>
         <td><a class="nav-link"
-            routerLink='/deail'>Detail</a></td>
+            [routerLink]="['/users', user.id]">Detail</a></td>
     </tr>
     </tbody>
     </table>
