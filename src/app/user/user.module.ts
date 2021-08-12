@@ -4,6 +4,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { StoreModule } from '@ngrx/store';
+import { userReducer } from './state/user.reducer';
 
 const userRoutes: Routes = [
   { path: '', component: UserListComponent },
@@ -18,7 +20,8 @@ const userRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(userRoutes),
-    FormsModule
+    FormsModule,
+    StoreModule.forFeature("Users", userReducer)
   ]
 })
 export class UserModule { }
